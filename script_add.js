@@ -159,3 +159,9 @@ function createTodoApp(container, title, key) {
         appForm.input.value = '';
 	})
 }
+
+let btnAllDelete = document.getElementById('del-all');
+btnAllDelete.addEventListener("click", () => {
+	localStorage.clear();
+	location.reload();
+});
